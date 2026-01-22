@@ -1,0 +1,43 @@
+name: Feature request
+description: Suggest an improvement and let others vote 👍
+title: "[Feature]: "
+labels: ["type:feature", "status:triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Tip: Search existing issues first. If you like an existing idea, upvote 👍 instead of creating a duplicate.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem / use case
+      placeholder: "What are you trying to achieve?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      placeholder: "What should the app do?"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Expected impact
+      options:
+        - Nice to have
+        - Useful
+        - Important
+        - Critical
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives / workarounds (optional)
+      required: false
