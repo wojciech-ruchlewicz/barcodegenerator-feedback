@@ -1,0 +1,84 @@
+name: Bug report
+description: Report a problem in Barcode Generator
+title: "[Bug]: "
+labels: ["type:bug", "status:triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks! Please avoid sharing personal data. If the issue includes sensitive info, use email support instead.
+
+  - type: input
+    id: app_version
+    attributes:
+      label: App version
+      description: e.g. 3.3.1 (or build number)
+      placeholder: "3.3.1"
+    validations:
+      required: true
+
+  - type: input
+    id: android_version
+    attributes:
+      label: Android version
+      placeholder: "14"
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Device model
+      placeholder: "Pixel 7 / Samsung A52 / etc."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Scanner
+        - Generator
+        - Saved codes / database
+        - Export / share
+        - Settings
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Numbered steps, please.
+      placeholder: |
+        1) Open...
+        2) Tap...
+        3) See...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+      placeholder: "What should happen?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual behavior
+      placeholder: "What happens instead?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / logs (optional)
+      description: Drag & drop images here. Please redact sensitive info.
+    validations:
+      required: false
