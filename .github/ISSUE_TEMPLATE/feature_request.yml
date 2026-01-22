@@ -40,4 +40,6 @@ body:
     id: alternatives
     attributes:
       label: Alternatives / workarounds (optional)
+      placeholder: "Any alternative approaches or existing workarounds?"
+    validations:
       required: false
